@@ -1,7 +1,7 @@
 import sqlite3
-import os
+# import os
 
-with sqlite3.connect(os.path.join('C:\\Users\\User\\', 'database.db')) as conn:
+with sqlite3.connect('database.db') as conn:
     cursor = conn.cursor()
     cursor.execute("INSERT INTO students (name, surname) VALUES ('Иван', 'Иванов');")
     # cursor.execute("INSERT INTO students (name, surname) VALUES ('Петр', 'Петров');")
